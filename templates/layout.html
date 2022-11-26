@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="The Homepage of Nikocraft">
+    <meta name="author" content="Nikocraft">
+    <meta name="robots" content="index,follow">
+
+    <title>Nikocraft - {% block title %}{% endblock title %}</title>
+
+    <link rel="icon" type="image/x-icon" href="/static/img/Nikocraft Logo.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/style/main.css">
+
+    {% block stylesheets %}{% endblock stylesheets %}
+
+</head>
+
+<body>
+
+    <nav id="menu" class="show-mobile">
+
+        <a href="/software">Software</a><br>
+        <a href="/minecraft">Minecraft</a><br>
+        <a href="/news">News</a><br>
+        <a href="https://www.youtube.com/channel/UCDQeT76_tVZqgJcN1EaT97A">Youtube</a><br>
+        <a href="https://github.com/Nikocraft123">Github</a><br>
+        <a href="/about">About</a><br>
+
+    </nav>
+
+    <header id="header">
+
+        <a href="/">
+
+            <img src="/static/img/Nikocraft Logo.jpg">
+
+            {% block title_tag %}{% endblock title_tag %}
+
+        </a>
+
+        <div class="show-mobile" onclick="toggleMenu()">
+            <img id="menu-button" src="/static/img/Menu.png" >
+        </div>
+
+        <nav class="hide-mobile">
+
+            <a href="/software">
+                <img src="Download.png">
+                Software
+            </a>
+            <a href="/minecraft">Minecraft</a>
+            <a href="/news">News</a>
+            <a href="https://www.youtube.com/channel/UCDQeT76_tVZqgJcN1EaT97A">Youtube</a>
+            <a href="https://github.com/Nikocraft123">Github</a>
+            <a href="/about">About</a>
+
+        </nav>
+
+    </header>
+
+    <div>
+        {% block content %}{% endblock content %}
+    </div>
+
+    <footer>
+        <p>© 2022 - Nikocraft | <a href="#">Imprint</a> | <a href="#">Privacy</a></p>
+    </footer>
+
+    <script src="/static/script/main.js"></script>
+
+    {% block scripts %}{% endblock scripts %}
+
+</body>
+
+</html>

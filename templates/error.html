@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}Error{% endblock title %}
+
+{% block title_tag %}<h1 id="title"><p>Nikocraft<br><span>ERROR</span></p></h1>{% endblock title_tag %}
+
+{% block content %}
+<div class="code">{{code}}</div>
+<div class="error">ERROR</div>
+<div class="message">{{message}}</div>
+<div class="info", id="info">Redirect to Home in 10 seconds ...</div>
+<body onload="redirect()"></body>
+{% endblock content %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="/static/style/error.css">
+{% endblock stylesheets %}
+
+{% block scripts %}
+<script src="/static/script/error.js"></script>
+{% endblock scripts %}

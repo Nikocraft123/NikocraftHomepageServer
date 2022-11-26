@@ -1,0 +1,31 @@
+.code {
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+    line-height: 120px;
+    font-size: 120pt;
+    font-weight: 700;
+}
+
+.error {
+    text-align: center;
+    color: black;
+    font-size: 62pt;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.message {
+    text-align: center;
+    color: gray;
+    font-size: 18pt;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.info {
+    text-align: center;
+    color: gray;
+    font-size: 14pt;
+    font-weight: 300;
+}
